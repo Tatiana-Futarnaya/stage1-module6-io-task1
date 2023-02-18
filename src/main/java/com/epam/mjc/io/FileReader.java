@@ -2,7 +2,7 @@ package com.epam.mjc.io;
 
 import java.io.*;
 import java.util.ArrayList;
-import java.util.Arrays;
+
 
 
 public class FileReader {
@@ -16,8 +16,6 @@ public class FileReader {
             while ((l=reader.readLine())!=null){
                 list.add(l.substring(l.lastIndexOf(" ")+1));
             }
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
